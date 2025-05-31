@@ -55,7 +55,7 @@ export async function GET(req: NextRequest) {
                 fontWeight: 500,
               }}
             >
-              mustafasameen.dev
+              mustafasameen.com
             </span>
           </div>
 

@@ -11,7 +11,7 @@ const structuredData = {
     "@type": "Organization",
     name: "University of Florida",
   },
-  url: "https://onurhan.dev",
+  url: "https://mustafasameen.com",
   sameAs: [
     "https://github.com/mustafasameen",
     "https://www.linkedin.com/in/mustafasameen/",
@@ -21,28 +21,58 @@ const structuredData = {
 export default function About() {
   const paragraphs = [
     <>
-      I am an incoming Ph.D. student in the SERMoS Lab at the{" "}
-      <a href="https://www.ufl.edu" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
+      I am an incoming Ph.D. student at the{" "}
+      <a href="https://www.ufl.edu" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
         University of Florida
       </a>
       , advised by{" "}
-      <a href="https://faculty.eng.ufl.edu/xilei-zhao/" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
+      <a href="https://essie.ufl.edu/people/name/xilei-zhao/" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
         Dr. Xilei Zhao
       </a>
       , joining the{" "}
-      <a href="https://faculty.eng.ufl.edu/sermos-lab/" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
+      <a href="https://faculty.eng.ufl.edu/sermos-lab/" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
         SERMoS Lab
       </a>
-      {" "}this Fall. I graduate this May from{" "}
-      <a href="https://www.coloradocollege.edu" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
+      {" "}this Fall. I graduated this May from{" "}
+      <a href="https://www.coloradocollege.edu" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
         Colorado College
       </a>
       {" "}with a double major in Computer Science and Mathematics.
-    </>,
-    `My research sits at the intersection of AI and transportation engineering. I'm currently focused on:
-     (A) Spatio-temporal demand forecasting using LLM-based agents
-     (B) Multi-agent LLM systems for adaptive, real-time digital twins
-     (C) Fairness-aware, interpretable models across multi-stage travel-model pipelines`,
+      <br />
+      <br />
+      This summer, I will be joining the{" "}
+      <a href="https://www.urbanailab.com/ra-internship" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
+        MIT-UF-NEU 2025 Joint Summer Research Camp
+      </a>
+      {" "}under{" "}
+      <a href="https://www.linkedin.com/in/musamauh/" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
+        Dr. Muhammad Usama
+      </a>
+       {" "} at the{" "}
+      <a href="https://mobility.mit.edu/" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
+        JTL Urban Mobility Lab at MIT
+      </a>
+      {" "}and{" "}
+      <a href="https://tso.sites.northeastern.edu" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
+        Transit Mobility Lab at Northeastern
+      </a>
+      . Our primary focus will be on developing and deploying LLM-based frameworks for transit systems.
+      <br />
+      <br />
+    My research sits at the intersection of AI and transportation engineering. My interests are: {""}
+    <span className="font-medium">
+      Spatio-temporal forecasting
+    </span>
+    {", "}
+    <span className="font-medium">
+      LLM agents & multi-agentic systems
+    </span>
+    {", and "}
+    <span className="font-medium">
+      AI for transportation & mobility
+    </span>
+    .
+    </>
   ];
 
   return (

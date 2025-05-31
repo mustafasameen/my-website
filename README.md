@@ -1,4 +1,4 @@
-# mustafasameen.dev
+# mustafasameen.com
 
 - **Icons**: [Lucide React](https://lucide.dev/icons/)
 - **Like**: [Upstash Claps](https://github.com/upstash/claps)
@@ -23,7 +23,7 @@
 ## Demo
 
 ```bash
-https://mustafasameen.dev
+https://mustafasameen.com
 ```
 
 ## Running Locally

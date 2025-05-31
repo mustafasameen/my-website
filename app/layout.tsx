@@ -11,11 +11,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_URL || "https://onurhan.dev"
+    process.env.NEXT_PUBLIC_APP_URL || "https://mustafasameen.com"
   ),
   title: {
     default: " Mustafa Sameen - PhD Student",
-    template: "%s | Mustafa Sameen",
+    template: "Mustafa Sameen - PhD Student",
   },
   description:
     "Mustafa Sameen - PhD Student at University of Florida",
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
     title: "Mustafa Sameen - PhD Student",
     description:
       "PhD Student at University of Florida",
-    url: "https://onurhan.dev",
+    url: "https://mustafasameen.com",
     siteName: "Mustafa Sameen",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://onurhan.dev/logo.svg",
+        url: "https://mustafasameen.com/logo.svg",
         width: 1200,
         height: 630,
         alt: "Mustafa Sameen",

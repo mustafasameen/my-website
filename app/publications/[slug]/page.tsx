@@ -32,7 +32,7 @@ export async function generateMetadata({
   let ogImage =
     new URL(
       "/opengraph-image",
-      process.env.NEXT_PUBLIC_APP_URL || "https://onurhan.dev"
+      process.env.NEXT_PUBLIC_APP_URL || "https://mustafasameen.com"
     ).toString() + `?title=${encodeURIComponent(title)}`;
 
   return {
@@ -44,7 +44,7 @@ export async function generateMetadata({
       description,
       type: "article",
       publishedTime,
-      url: `https://onurhan.dev/blog/${blog.slug}`,
+      url: `https://mustafasameen.com/publications/${blog.slug}`,
       images: [
         {
           url: ogImage,
@@ -58,8 +58,8 @@ export async function generateMetadata({
       card: "summary_large_image",
       title,
       description,
-      site: "@onurhan1337",
-      creator: "@onurhan1337",
+      site: "@mustafasameen",
+      creator: "@mustafasameen",
       images: [ogImage],
     },
   };
@@ -88,12 +88,12 @@ export default async function BlogDetailPage({ params }: Props) {
             dateModified: blog.metadata.publishedAt,
             description: blog.metadata.summary,
             image: blog.metadata.image
-              ? `https://onurhan.dev${blog.metadata.image}`
-              : `https://onurhan.dev/og?title=${blog.metadata.title}`,
-            url: `https://onurhan.dev/blog/${blog.slug}`,
+              ? `https://mustafasameen.com${blog.metadata.image}`
+              : `https://mustafasameen.com/og?title=${blog.metadata.title}`,
+            url: `https://mustafasameen.com/publications/${blog.slug}`,
             author: {
               "@type": "Person",
-              name: "Onurhan Demir",
+              name: "Mustafa Sameen",
             },
           }),
         }}

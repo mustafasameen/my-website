@@ -9,6 +9,7 @@ import { ModeToggle } from "./ui/theme-toggle";
 
 const NAV_ITEMS = {
   about: "/",
+  news: "/news",
   publications: "/publications",
   experience: "/experience",
 };
@@ -26,11 +27,12 @@ export const Header = () => {
           <div className="flex flex-row items-center">
             <Link href="/">
               <Image
-                src="/logo.svg"
-                alt="Logo"
-                width={40}
-                height={40}
+                src="/profile.JPG"
+                alt="Profile photo"
+                width={120}
+                height={120}
                 priority={true}
+                className="object-cover border-neutral-200 dark:border-neutral-700 shadow-sm rounded-full"
               />
               <span className="sr-only">Mustafa Sameen</span>
             </Link>
@@ -40,6 +42,7 @@ export const Header = () => {
                 Mustafa Sameen
               </span>
               <span className="opacity-60">PhD student</span>
+              <span className="opacity-60">University of Florida</span>
             </div>
           </div>
 
