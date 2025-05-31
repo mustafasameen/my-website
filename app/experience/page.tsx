@@ -30,7 +30,7 @@ export default function Work() {
                 Developing an AI-agent layer that integrates with spatio-temporal deep learning models (e.g., GCNs, CNN-RNN/Transformer hybrids) to enable real-time forecasting and prescriptive analytics for ride-sourcing demand.
               </li>
               <li>
-                Designing automated mechanisms for "what-if" policy analysis, allowing simulation of interventions such as dynamic congestion pricing or infrastructure changes.
+                Designing automated mechanisms for &quot;what-if&quot; policy analysis, allowing simulation of interventions such as dynamic congestion pricing or infrastructure changes.
               </li>
               <li>
                 Implementing agent-based optimization to iteratively search for interventions that optimize stakeholder objectives (e.g., minimizing passenger wait times, balancing vehicle distribution).
