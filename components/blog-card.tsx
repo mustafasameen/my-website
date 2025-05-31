@@ -1,6 +1,23 @@
 import Link from "next/link";
 
-export const BlogCard = ({ blog }) => {
+export const BlogCard = ({ blog, isPublication = false }) => {
+  if (isPublication) {
+    return (
+      <article className="py-4 sm:py-8 dark:border-b-zinc-800">
+        <header>
+          <h3 className="font-semibold underline underline-offset-4 decoration-1 decoration-zinc-300">
+            <a href={blog.metadata.pdfUrl} target="_blank" rel="noopener noreferrer">{blog.metadata.title}</a>
+          </h3>
+          <p className="mt-1 opacity-70 dark:opacity-60">
+            {blog.metadata.authors}
+          </p>
+        </header>
+        <footer className="mt-1 flex items-center space-x-2 font-mono text-sm uppercase tracking-wider opacity-50 dark:opacity-40">
+          <span>{blog.metadata.venue}</span>
+        </footer>
+      </article>
+    );
+  }
   return (
     <article className="py-4 sm:py-8 dark:border-b-zinc-800">
       <header>

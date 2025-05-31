@@ -14,17 +14,17 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_APP_URL || "https://onurhan.dev"
   ),
   title: {
-    default: "Onurhan Demir - Software Developer",
-    template: "%s | Onurhan Demir",
+    default: " Mustafa Sameen - PhD Student",
+    template: "%s | Mustafa Sameen",
   },
   description:
-    "Onurhan Demir - Software Developer at Insider, focused on building comprehensive applications and micro products.",
+    "Mustafa Sameen - PhD Student at University of Florida",
   openGraph: {
-    title: "Onurhan Demir - Software Developer",
+    title: "Mustafa Sameen - PhD Student",
     description:
-      "Software Developer at Insider, focused on building comprehensive applications and micro products.",
+      "PhD Student at University of Florida",
     url: "https://onurhan.dev",
-    siteName: "Onurhan Demir",
+    siteName: "Mustafa Sameen",
     locale: "en_US",
     type: "website",
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: "https://onurhan.dev/logo.svg",
         width: 1200,
         height: 630,
-        alt: "Onurhan Demir",
+        alt: "Mustafa Sameen",
       },
     ],
   },

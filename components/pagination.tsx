@@ -8,13 +8,15 @@ import { BlogList } from "./blog-list";
 import { Button } from "./ui/button";
 
 interface PaginationProps {
-  allBlogs: Blog[];
+  allBlogs: any[]; // Blog[] or Publication[]
   postsPerPage?: number;
+  isPublication?: boolean;
 }
 
 export default function Pagination({
   allBlogs,
   postsPerPage = 5,
+  isPublication = false,
 }: PaginationProps) {
   const router = useRouter();
   const searchParamsHook = useSearchParams();
@@ -25,25 +27,32 @@ export default function Pagination({
     const totalPages = Math.max(1, Math.ceil(allBlogs.length / postsPerPage));
 
     const paginatedBlogs = [...allBlogs]
-      .sort(
-        (a, b) =>
-          new Date(b.metadata.publishedAt).getTime() -
-          new Date(a.metadata.publishedAt).getTime()
-      )
+      .sort((a, b) => {
+        if (isPublication) {
+          return b.metadata.venue.localeCompare(a.metadata.venue);
+        } else {
+          return (
+            new Date(b.metadata.publishedAt).getTime() -
+            new Date(a.metadata.publishedAt).getTime()
+          );
+        }
+      })
       .slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage);
 
     return { currentPage, totalPages, paginatedBlogs };
-  }, [allBlogs, searchParamsHook, postsPerPage]);
+  }, [allBlogs, searchParamsHook, postsPerPage, isPublication]);
 
   const handlePageChange = (page: number) => {
     if (page < 1 || page > totalPages) return;
-    const path = page === 1 ? "/blog" : `/blog?page=${page}`;
+    const path = page === 1
+      ? (isPublication ? "/publication" : "/blog")
+      : (isPublication ? `/publication?page=${page}` : `/blog?page=${page}`);
     router.push(path);
   };
 
   return (
     <>
-      <BlogList blogs={paginatedBlogs} currentPage={currentPage} />
+      <BlogList blogs={paginatedBlogs} currentPage={currentPage} isPublication={isPublication} />
       <nav
         aria-label="Blog pagination"
         className="flex justify-center gap-4 mt-8"

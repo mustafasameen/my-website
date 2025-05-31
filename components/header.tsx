@@ -9,8 +9,8 @@ import { ModeToggle } from "./ui/theme-toggle";
 
 const NAV_ITEMS = {
   about: "/",
-  blog: "/blog",
-  work: "/work",
+  publications: "/publications",
+  experience: "/experience",
 };
 
 export const Header = () => {
@@ -32,14 +32,14 @@ export const Header = () => {
                 height={40}
                 priority={true}
               />
-              <span className="sr-only">Onurhan Demir</span>
+              <span className="sr-only">Mustafa Sameen</span>
             </Link>
 
             <div className="flex flex-col ml-4">
               <span className="text-medium inline-block font-medium">
-                Onurhan Demir
+                Mustafa Sameen
               </span>
-              <span className="opacity-60">software developer</span>
+              <span className="opacity-60">PhD student</span>
             </div>
           </div>
 
@@ -57,6 +57,16 @@ export const Header = () => {
                   {name}
                 </Link>
               ))}
+              <a
+                href="/CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "font-normal transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2"
+                )}
+              >
+                cv
+              </a>
             </div>
             <ModeToggle />
           </div>

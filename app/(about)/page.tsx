@@ -5,39 +5,44 @@ import Script from "next/script";
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Onurhan Demir",
-  jobTitle: "Software Developer",
+  name: "Mustafa Sameen",
+  jobTitle: "PhD Student",
   worksFor: {
     "@type": "Organization",
-    name: "Insider",
+    name: "University of Florida",
   },
   url: "https://onurhan.dev",
   sameAs: [
-    "https://github.com/onurhan1337",
-    "https://youtube.com/@onurhandev",
-    "https://read.cv/onurhan",
+    "https://github.com/mustafasameen",
+    "https://www.linkedin.com/in/mustafasameen/",
   ],
 };
 
 export default function About() {
   const paragraphs = [
     <>
-      As a Software Developer at{" "}
-      <span className="font-medium decoration-wavy underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
-        Insider
-      </span>
-      , I focus on developing comprehensive applications that deliver value
-      across various aspects of software. My expertise bridges the gap between
-      design and functionality, reflecting my passion for creating seamless user
-      experiences.
+      I am an incoming Ph.D. student in the SERMoS Lab at the{" "}
+      <a href="https://www.ufl.edu" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
+        University of Florida
+      </a>
+      , advised by{" "}
+      <a href="https://faculty.eng.ufl.edu/xilei-zhao/" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
+        Dr. Xilei Zhao
+      </a>
+      , joining the{" "}
+      <a href="https://faculty.eng.ufl.edu/sermos-lab/" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
+        SERMoS Lab
+      </a>
+      {" "}this Fall. I graduate this May from{" "}
+      <a href="https://www.coloradocollege.edu" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
+        Colorado College
+      </a>
+      {" "}with a double major in Computer Science and Mathematics.
     </>,
-    `Driven by a love for software development, I thrive on leveraging user
-     feedback to enhance products and optimize workflows. I find particular
-     excitement in building solutions that streamline processes and contribute
-     to impactful projects.`,
-    `Outside of work, I enjoy crafting minimalist
-     digital tools that address web-related challenges and improve
-     development efficiency.`,
+    `My research sits at the intersection of AI and transportation engineering. I'm currently focused on:
+     (A) Spatio-temporal demand forecasting using LLM-based agents
+     (B) Multi-agent LLM systems for adaptive, real-time digital twins
+     (C) Fairness-aware, interpretable models across multi-stage travel-model pipelines`,
   ];
 
   return (
@@ -47,7 +52,7 @@ export default function About() {
       text-zinc-800 dark:text-zinc-200 container animate-enter"
     >
       <p className="my-5 text-zinc-800 dark:text-zinc-200">
-        Hi, I&apos;m Onurhan.
+        Hi, I&apos;m Mustafa.
       </p>
       {paragraphs.map((paragraph, index) => (
         <div

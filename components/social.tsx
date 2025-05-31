@@ -1,8 +1,8 @@
 import { SocialButtonProps } from "@/types";
 import IconArrowRightUp from "./shared/icons/arrow-right-up";
-import IconYoutube from "./shared/icons/youtube";
 import IconGithub from "./shared/icons/github";
-import IconCv from "./shared/icons/cv";
+import IconLinkedin from "./shared/icons/linkedin";
+import IconMail from "./shared/icons/mail";
 
 import Link from "next/link";
 
@@ -24,22 +24,22 @@ function SocialButton({ href, children }: SocialButtonProps) {
 export default function Social() {
   return (
     <div className="flex flex-col gap-2 md:flex-row md:gap-2">
-      <SocialButton href="https://youtube.com/@onurhandev">
-        <div className="flex flex-row items-center">
-          <IconYoutube />
-          <span className="ml-3">Youtube</span>
-        </div>
-      </SocialButton>
-      <SocialButton href="https://github.com/onurhan1337">
+      <SocialButton href="https://github.com/mustafasameen">
         <div className="flex flex-row items-center">
           <IconGithub />
           <span className="ml-3">Github</span>
         </div>
       </SocialButton>
-      <SocialButton href="https://read.cv/onurhan">
+      <SocialButton href="https://www.linkedin.com/in/mustafasameen/">
         <div className="flex flex-row items-center">
-          <IconCv />
-          <span className="ml-3">Read.cv</span>
+          <IconLinkedin />
+          <span className="ml-3">LinkedIn</span>
+        </div>
+      </SocialButton>
+      <SocialButton href="mailto:mustafasameen@ufl.edu">
+        <div className="flex flex-row items-center">
+          <IconMail />
+          <span className="ml-3">Email</span>
         </div>
       </SocialButton>
     </div>

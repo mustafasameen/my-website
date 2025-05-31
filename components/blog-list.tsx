@@ -7,9 +7,10 @@ import Separator from "./shared/separator";
 interface BlogListProps {
   blogs: any[];
   currentPage: number;
+  isPublication?: boolean;
 }
 
-export function BlogList({ blogs, currentPage }: BlogListProps) {
+export function BlogList({ blogs, currentPage, isPublication }: BlogListProps) {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -44,7 +45,7 @@ export function BlogList({ blogs, currentPage }: BlogListProps) {
       >
         {blogs.map((blog, index, array) => (
           <motion.div key={blog.slug} variants={item}>
-            <BlogCard blog={blog} />
+            <BlogCard blog={blog} isPublication={isPublication} />
             {index !== array.length - 1 && <Separator />}
           </motion.div>
         ))}

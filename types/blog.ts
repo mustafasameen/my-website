@@ -8,3 +8,15 @@ export interface Blog {
   content: string;
   readingTime: number;
 }
+
+export interface Publication {
+  slug: string;
+  metadata: {
+    title: string;
+    authors: string;
+    venue: string; // Preprint or conference name
+    pdfUrl: string;
+    image?: string;
+  };
+  content: string;
+}

@@ -5,7 +5,7 @@ export default function robots() {
         userAgent: "*",
       },
     ],
-    sitemap: "https://onurhan.dev/sitemap.xml",
-    host: "https://onurhan.dev",
+    sitemap: "https://mustafasameen.dev/sitemap.xml",
+    host: "https://mustafasameen.dev",
   };
 }

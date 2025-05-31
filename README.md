@@ -1,6 +1,4 @@
-# onurhan.dev
-
-<a href="https://www.buymeacoffee.com/onurhan"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=onurhan&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" /></a>
+# mustafasameen.dev
 
 - **Icons**: [Lucide React](https://lucide.dev/icons/)
 - **Like**: [Upstash Claps](https://github.com/upstash/claps)
@@ -13,10 +11,10 @@
 ## Overview
 
 - `pages/api/*` - [API Routes](https://nextjs.org/docs/api-routes/introduction), claps.
-- `app/blog/*` - Static pre-rendered blog pages using Contentlayer.
+- `app/publication/*` - Static pre-rendered publication pages using Contentlayer.
 - `app/*` - All other pages.
 - `components/` - All components.
-- `public/*` - Static assets including images for blogs and other all images.
+- `public/*` - Static assets including images for publications and other all images.
 - `content/` - Contains all posts and snippets.
 - `lib/`- Contains metadata and util functions.
 - `types/`- Contains all types and interfaces.
@@ -25,7 +23,7 @@
 ## Demo
 
 ```bash
-https://onurhan.dev
+https://mustafasameen.dev
 ```
 
 ## Running Locally
@@ -33,18 +31,17 @@ https://onurhan.dev
 This application requires Node.js v16.13+.
 
 ```bash
-git clone https://github.com/onurhan1337/my-website.git
+git clone https://github.com/mustafasameen/my-website.git
 cd my-website
 npm install
 npm run dev
 ```
 
-Create a `.env` file similar to [`.env.example`](https://github.com/onurhan1337/my-website/blob/master/.env.example). You don't need to fill them out for the site to work. However, it is required to be able to use the [Upstash/Claps](https://github.com/upstash/claps) package.
+Create a `.env` file similar to [`.env.example`](https://github.com/mustafasameen/my-website/blob/master/.env.example). You don't need to fill them out for the site to work. However, it is required to be able to use the [Upstash/Claps](https://github.com/upstash/claps) package.
 
 ## Cloning / Forking
 
-Please review the [license](https://github.com/onurhan1337/my-website/blob/master/LICENSE.txt) and remove all of my personal information (resume, blog posts, images, etc.).
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Please review the [license](https://github.com/mustafasameen/my-website/blob/master/LICENSE.txt) and remove all of my personal information (resume, publications, images, etc.).
 
 ## Getting Started
 
@@ -77,11 +74,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-# Inspiration
+# Credits
 
-- [@rauchg](https://twitter.com/emilkowalski_)
-- [@ademilter](https://twitter.com/ademilter)
-- [@leerob](https://twitter.com/leeerob)
-- [@shadcn](https://twitter.com/shadcn)
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [@onurhan1337](https://github.com/onurhan1337)
