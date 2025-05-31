@@ -15,7 +15,7 @@ const news2025 = [
     date: "April, 2025",
     content: (
       <>
-        Presented "FORMAL: Democratizing Lean 4 Formalization Through Retrieval-Augmented Thinking and Agentic Feedback Loops" at the <a href="https://sites.google.com/view/mathforallnola/in-person-locations/boulder-co" target="_blank" rel="noopener noreferrer" className="underline">Math for All Conference 2025</a>
+        Presented &quot;FORMAL: Democratizing Lean 4 Formalization Through Retrieval-Augmented Thinking and Agentic Feedback Loops&quot; at the <a href="https://sites.google.com/view/mathforallnola/in-person-locations/boulder-co" target="_blank" rel="noopener noreferrer" className="underline">Math for All Conference 2025</a>
       </>
     ),
   },
