@@ -39,6 +39,7 @@ export default function Work() {
                 Investigating scalable deployment strategies for AI agents across heterogeneous urban zones, comparing global versus local agent paradigms for improved forecasting and policy relevance.
               </li>
             </ul>
+                      <hr className="my-8 border-neutral-200 dark:border-neutral-800" />
           </article>
 
           <article>
@@ -70,6 +71,7 @@ export default function Work() {
                 Implemented a low-resource efficient system using local LLMs, democratizing access to formal verification.
               </li>
             </ul>
+                      <hr className="my-8 border-neutral-200 dark:border-neutral-800" />
           </article>
 
           <article>
@@ -95,7 +97,9 @@ export default function Work() {
                 Optimized front-end and back-end connectivity, preparing the app for a wider release.
               </li>
             </ul>
+                      <hr className="my-8 border-neutral-200 dark:border-neutral-800" />
           </article>
+
 
           <article>
             <header>

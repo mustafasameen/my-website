@@ -82,7 +82,7 @@ export default function About() {
       text-zinc-800 dark:text-zinc-200 container animate-enter"
     >
       <p className="my-5 text-zinc-800 dark:text-zinc-200">
-        Hi, I&apos;m Mustafa.
+        {/* Hi, I&apos;m Mustafa. */}
       </p>
       {paragraphs.map((paragraph, index) => (
         <div

@@ -44,8 +44,8 @@ export default function NewsPage() {
       </div>
       <ul className="space-y-8">
         {newsItems.map((item, idx) => (
-          <li key={idx} className="flex items-start gap-4">
-            <span className="text-sm text-neutral-500 min-w-[120px] pt-1">{item.date}</span>
+          <li key={idx} className="flex flex-col sm:flex-row items-start gap-1 sm:gap-4">
+            <span className="text-xs sm:text-sm text-neutral-500 min-w-0 sm:min-w-[120px] pt-0 sm:pt-1">{item.date}</span>
             <span className="text-[0.95rem] leading-relaxed text-base">{item.content}</span>
           </li>
         ))}
