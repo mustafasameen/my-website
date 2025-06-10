@@ -11,7 +11,7 @@
 ## Overview
 
 - `pages/api/*` - [API Routes](https://nextjs.org/docs/api-routes/introduction), claps.
-- `app/publication/*` - Static pre-rendered publication pages using Contentlayer.
+- `app/publications/*` - Static pre-rendered publication pages using Contentlayer.
 - `app/*` - All other pages.
 - `components/` - All components.
 - `public/*` - Static assets including images for publications and other all images.
