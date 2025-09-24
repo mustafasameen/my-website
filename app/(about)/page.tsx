@@ -21,7 +21,7 @@ const structuredData = {
 export default function About() {
   const paragraphs = [
     <>
-      I am an incoming Ph.D. student at the{" "}
+      I am a Ph.D. student at the{" "}
       <a href="https://www.ufl.edu" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
         University of Florida
       </a>
@@ -29,17 +29,16 @@ export default function About() {
       <a href="https://essie.ufl.edu/people/name/xilei-zhao/" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
         Dr. Xilei Zhao
       </a>
-      , joining the{" "}
+      , in the{" "}
       <a href="https://faculty.eng.ufl.edu/sermos-lab/" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
         SERMoS Lab
-      </a>
-      {" "}this Fall. I graduated this May from{" "}
+      </a>. I graduated this May from{" "}
       <a href="https://www.coloradocollege.edu" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
         Colorado College
       </a>
       {" "}with a double major in Computer Science and Mathematics.
       <br />
-      <br />
+      {/* <br />
       This summer, I will be joining the{" "}
       <a href="https://www.urbanailab.com/ra-internship" target="_blank" rel="noopener noreferrer" className="font-medium underline decoration-from-font text-emerald-950 decoration-emerald-500 dark:text-emerald-50 dark:decoration-emerald-400 tracking-tight">
         MIT-UF-NEU 2025 Joint Summer Research Camp
@@ -57,13 +56,13 @@ export default function About() {
         Transit Mobility Lab at Northeastern
       </a>
       . Our primary focus will be on developing and deploying LLM-based frameworks for transit systems.
-      <br />
+      <br /> */}
       <br />
     My research sits at the intersection of AI and transportation engineering. My interests are: {""}
-    <span className="font-medium">
+    {/* <span className="font-medium">
       Spatio-temporal forecasting
     </span>
-    {", "}
+    {", "} */}
     <span className="font-medium">
       LLM agents & multi-agentic systems
     </span>
