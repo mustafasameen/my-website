@@ -29,6 +29,11 @@ export default function Pagination({
     const paginatedBlogs = [...allBlogs]
       .sort((a, b) => {
         if (isPublication) {
+          const yearA = Number(a.metadata.year || 0);
+          const yearB = Number(b.metadata.year || 0);
+          if (yearA !== yearB) {
+            return yearB - yearA;
+          }
           return b.metadata.venue.localeCompare(a.metadata.venue);
         } else {
           return (
@@ -45,8 +50,8 @@ export default function Pagination({
   const handlePageChange = (page: number) => {
     if (page < 1 || page > totalPages) return;
     const path = page === 1
-      ? (isPublication ? "/publication" : "/blog")
-      : (isPublication ? `/publication?page=${page}` : `/blog?page=${page}`);
+      ? (isPublication ? "/publications" : "/blog")
+      : (isPublication ? `/publications?page=${page}` : `/blog?page=${page}`);
     router.push(path);
   };
 

@@ -2,35 +2,46 @@
 
 import Container from "@/components/shared/container";
 
+const news2026 = [
+  {
+    date: "Jan, 2026",
+    content: (
+      <>
+        Our paper on the GHOST home detection software was accepted to the <a href="https://trb.org/AnnualMeeting/AnnualMeeting.aspx" target="_blank" rel="noopener noreferrer" className="underline">Transportation Research Board 105th Annual Meeting</a>.
+      </>
+    ),
+  },
+];
+
 const news2025 = [
   {
-    date: "June, 2025",
+    date: "Sep, 2025",
     content: (
       <>
-        Accepted to the <a href="https://www.urbanailab.com/ra-internship" target="_blank" rel="noopener noreferrer" className="underline">MIT-UF-NEU 2025</a> Joint Summer Research Camp under <a href="https://www.linkedin.com/in/musamauh/" target="_blank" rel="noopener noreferrer" className="underline">Dr. Muhammad Usama</a>, joining the <a href="https://mobility.mit.edu/" target="_blank" rel="noopener noreferrer" className="underline">JTL Urban Mobility Lab at MIT</a> and <a href="https://tso.sites.northeastern.edu" target="_blank" rel="noopener noreferrer" className="underline">Transit Mobility Lab at Northeastern</a>.
+        Released the <a href="https://arxiv.org/abs/2509.18181" target="_blank" rel="noopener noreferrer" className="underline">SAPA preprint</a> on theory-guided LLMs for ridesourcing mode choice modeling.
       </>
     ),
   },
   {
-    date: "April, 2025",
+    date: "Aug, 2025",
     content: (
       <>
-        Presented &quot;FORMAL: Democratizing Lean 4 Formalization Through Retrieval-Augmented Thinking and Agentic Feedback Loops&quot; at the <a href="https://sites.google.com/view/mathforallnola/in-person-locations/boulder-co" target="_blank" rel="noopener noreferrer" className="underline">Math for All Conference 2025</a>
+        Started my Ph.D. in Civil and Coastal Engineering at the <a href="https://www.ufl.edu" target="_blank" rel="noopener noreferrer" className="underline">University of Florida</a>.
       </>
     ),
   },
   {
-    date: "April, 2025",
+    date: "Jul, 2025",
     content: (
       <>
-        Will be joining the <a href="https://faculty.eng.ufl.edu/sermos-lab/" target="_blank" rel="noopener noreferrer" className="underline">SERMoS Lab@University of Florida</a> this Fall as a Ph.D. Student!
+        Completed a summer research internship at the <a href="https://mobility.mit.edu/" target="_blank" rel="noopener noreferrer" className="underline">MIT JTL-Transit Lab</a>.
       </>
     ),
   },
 ];
 
 export default function NewsPage() {
-  const newsItems = news2025;
+  const newsItems = [...news2026, ...news2025];
 
   return (
     <Container
@@ -39,7 +50,7 @@ export default function NewsPage() {
     >
       <div className="mb-8">
         <div className="flex border-b border-neutral-200 dark:border-neutral-700">
-          <button className="px-6 py-2 text-base font-medium border-t border-l border-r rounded-t-md border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900">2025</button>
+          <button className="px-6 py-2 text-base font-medium border-t border-l border-r rounded-t-md border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900">2026–2025</button>
         </div>
       </div>
       <ul className="space-y-8">

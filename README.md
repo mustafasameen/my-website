@@ -23,7 +23,7 @@
 ## Demo
 
 ```bash
-https://mustafasameen.com
+https://www.mustafasameen.com
 ```
 
 ## Running Locally

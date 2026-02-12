@@ -15,7 +15,10 @@ export interface Publication {
     title: string;
     authors: string;
     venue: string; // Preprint or conference name
-    pdfUrl: string;
+    pdfUrl?: string;
+    codeUrl?: string;
+    coFirstAuthors?: string;
+    year?: string;
     image?: string;
   };
   content: string;

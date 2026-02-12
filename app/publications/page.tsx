@@ -14,6 +14,15 @@ export default function PublicationsPage() {
 
   return (
     <Container size="large">
+      <header className="mb-8">
+        <p className="text-xs uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">
+          Publications
+        </p>
+        <p className="mt-2 text-xs text-neutral-500 dark:text-neutral-400">
+          * Equal contribution
+        </p>
+        <hr className="my-4 border-neutral-200 dark:border-neutral-800" />
+      </header>
       <Suspense fallback={<div>Loading...</div>}>
         <Pagination allBlogs={allPublications} isPublication />
       </Suspense>

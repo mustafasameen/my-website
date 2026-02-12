@@ -41,7 +41,7 @@ export const Header = () => {
               <span className="text-medium inline-block font-medium">
                 Mustafa Sameen
               </span>
-              <span className="opacity-60">PhD student</span>
+              <span className="opacity-60">PhD student, Civil & Coastal Engineering</span>
               <span className="opacity-60">University of Florida</span>
             </div>
           </div>
@@ -54,7 +54,7 @@ export const Header = () => {
                   href={href}
                   className={cn(
                     pathname === href ? "font-semibold" : "font-normal",
-                    "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2"
+                    "transition-all hover:text-emerald-900 dark:hover:text-emerald-100 hover:bg-emerald-50/60 dark:hover:bg-emerald-950/30 rounded-md flex align-middle relative py-1 px-2"
                   )}
                 >
                   {name}
@@ -65,7 +65,7 @@ export const Header = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
-                  "font-normal transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2"
+                  "font-normal transition-all hover:text-emerald-900 dark:hover:text-emerald-100 hover:bg-emerald-50/60 dark:hover:bg-emerald-950/30 rounded-md flex align-middle relative py-1 px-2"
                 )}
               >
                 cv

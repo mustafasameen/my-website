@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_APP_URL || "https://mustafasameen.com"
   ),
   title: {
-    default: " Mustafa Sameen - PhD Student",
+    default: "Mustafa Sameen - PhD Student",
     template: "Mustafa Sameen - PhD Student",
   },
   description:
@@ -48,10 +48,10 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Onurhan Demir",
+    title: "Mustafa Sameen",
     card: "summary_large_image",
-    site: "@onurhan1337",
-    creator: "@onurhan1337",
+    site: "@mustafasameen",
+    creator: "@mustafasameen",
   },
   verification: {
     google: "K1pkJ72cY3DylswXke2MHJGxmjJ91WXwgozcCICvFrU",
