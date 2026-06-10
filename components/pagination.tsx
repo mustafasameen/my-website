@@ -58,6 +58,7 @@ export default function Pagination({
   return (
     <>
       <BlogList blogs={paginatedBlogs} currentPage={currentPage} isPublication={isPublication} />
+      {totalPages > 1 && (
       <nav
         aria-label="Blog pagination"
         className="flex justify-center gap-4 mt-8"
@@ -80,6 +81,7 @@ export default function Pagination({
           Next
         </PaginationButton>
       </nav>
+      )}
     </>
   );
 }

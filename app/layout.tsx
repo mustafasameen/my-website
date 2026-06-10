@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   ),
   title: {
     default: "Mustafa Sameen - PhD Student",
-    template: "Mustafa Sameen - PhD Student",
+    template: "%s | Mustafa Sameen",
   },
   description:
     "Mustafa Sameen - PhD Student at University of Florida",

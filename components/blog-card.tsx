@@ -50,9 +50,10 @@ export const BlogCard = ({ blog, isPublication = false }) => {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="ml-2 inline-flex items-center rounded border border-zinc-200 px-2 py-0.5 text-[0.65rem] font-medium uppercase tracking-wide text-zinc-700 hover:border-zinc-300 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-300 dark:hover:border-zinc-600 dark:hover:text-zinc-100"
+        className="ml-2 inline-flex items-center gap-1 rounded-full border border-zinc-200 bg-white/80 px-2.5 py-0.5 align-middle text-[0.65rem] font-medium uppercase tracking-wide text-zinc-600 no-underline shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-300 hover:bg-emerald-50/60 hover:text-emerald-900 dark:border-zinc-700 dark:bg-zinc-900/40 dark:text-zinc-300 dark:hover:border-emerald-700/60 dark:hover:bg-emerald-950/40 dark:hover:text-emerald-100"
       >
         {label}
+        <span aria-hidden>↗</span>
       </a>
     );
 

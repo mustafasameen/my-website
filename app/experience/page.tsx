@@ -1,100 +1,124 @@
+import PageHeader from "@/components/page-header";
 import Container from "@/components/shared/container";
+import type { Metadata } from "next";
 
-export default function Work() {
+export const metadata: Metadata = {
+  title: "Experience",
+  description: "Research roles and what I worked on in each one.",
+};
+
+type Role = {
+  org: string;
+  orgUrl?: string;
+  title: string;
+  period: string;
+  highlights: string[];
+  tags: string[];
+};
+
+const roles: Role[] = [
+  {
+    org: "University of Florida — SERMoS Lab",
+    orgUrl: "https://faculty.eng.ufl.edu/sermos-lab/",
+    title: "Graduate Research Assistant",
+    period: "Jul 2025 — Present",
+    highlights: [
+      "Researching LLM agents for transportation — multi-agent simulation of travel behavior and automated analysis of large-scale mobility data.",
+      "Developed SAPA, a behavioral theory-guided LLM framework for ridesourcing mode-choice prediction.",
+      "Co-developed GHOST, an open-source tool for bias-mitigated home detection from mobile location data (TRB 2026).",
+    ],
+    tags: ["LLM agents", "Multi-agent simulation", "Mobility data"],
+  },
+  {
+    org: "MIT JTL-Transit Lab",
+    orgUrl: "https://mobility.mit.edu/",
+    title: "Summer Research Intern",
+    period: "Jun 2025 — Jul 2025",
+    highlights: [
+      "Designed a Spatial-RAG pipeline over transit data (GTFS/GIS) for the Chicago Transit Authority.",
+      "Prototyped LLM agents that reason about delay propagation and rerouting in transit networks.",
+    ],
+    tags: ["Spatial RAG", "Transit operations"],
+  },
+  {
+    org: "Colorado College — Math & Computer Science",
+    orgUrl: "https://www.coloradocollege.edu",
+    title: "Undergraduate Researcher (Senior Thesis)",
+    period: "Aug 2024 — May 2025",
+    highlights: [
+      "Built FORMAL, an agentic retrieval-augmented system that translates natural-language mathematics into Lean 4 code.",
+      "Reached 92% syntactic correctness and 83% semantic accuracy on the Lean-Workbook benchmark using local LLMs.",
+    ],
+    tags: ["Lean 4", "Formal methods"],
+  },
+];
+
+export default function Experience() {
   return (
-    <Container size="large">
-      <main className="prose prose-neutral dark:prose-invert">
-        <header className="mb-8">
-          <p className="text-xs uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400">
-            Experience
-          </p>
-          <hr className="my-4 border-neutral-200 dark:border-neutral-800" />
-        </header>
-        <section>
-          <article>
-            <header>
-              <h2 className="font-medium text-xl mb-1 tracking-tighter">
-                University of Florida
-              </h2>
-              <time className="text-neutral-600 dark:text-neutral-400 text-sm">
-                Graduate Research Assistant, July 2025 — present
-              </time>
-            </header>
-            <p>
-              Architecting LLM-driven agent systems for mobility modeling and behavioral inference in the SERMoS Lab.
-            </p>
-            <ul>
-              <li>
-                Built a LangGraph-based multi-agent system (Planner, Coder, Critic) to automate analysis of large-scale mobile location data.
-              </li>
-              <li>
-                Integrated cAST (Chunking via Abstract Syntax Trees) to retrieve and apply complex codebase documentation for transportation agencies.
-              </li>
-              <li>
-                Developed the SAPA framework to synthesize psychometric variables from survey data, improving PR-AUC for ridesourcing mode choice prediction by 75.9%.
-              </li>
-              <li>
-                Co-developed the GHOST Python package for bias-mitigated home detection, reducing spatial error to 1.84 meters on the Boston Walks dataset.
-              </li>
-              <li>
-                Leading a household travel simulation where LLM agents negotiate shared resources via a structured conversation protocol.
-              </li>
-            </ul>
-            <hr className="my-8 border-neutral-200 dark:border-neutral-800" />
-          </article>
-
-          <article>
-            <header>
-              <h2 className="font-medium text-xl mb-1 tracking-tighter">
-                MIT JTL-Transit Lab
-              </h2>
-              <time className="text-neutral-600 dark:text-neutral-400 text-sm">
-                Summer Research Intern, June 2025 — July 2025
-              </time>
-            </header>
-            <p>
-              Investigated multi-agent LLM architectures for the Chicago Transit Authority (CTA).
-            </p>
-            <ul>
-              <li>
-                Designed a Spatial-RAG pipeline blending dense retrieval with sparse spatial lookup (GTFS/GIS geometry).
-              </li>
-              <li>
-                Enabled agents to reason about delay propagation, rerouting, and simulate station-level dispatchers.
-              </li>
-              <li>
-                Collaborated with transit operations researchers on deploying LLM agents for policy-driven scenarios.
-              </li>
-            </ul>
-            <hr className="my-8 border-neutral-200 dark:border-neutral-800" />
-          </article>
-
-          <article>
-            <header>
-              <h2 className="font-medium text-xl mb-1 tracking-tighter">
-                Colorado College Math and Computer Science Department
-              </h2>
-              <time className="text-neutral-600 dark:text-neutral-400 text-sm">
-                Undergraduate Student Researcher (Thesis), Aug 2024 — May 2025
-              </time>
-            </header>
-            <p>
-              Led research on formal methods and AI-driven feedback loops for mathematical proof automation and verification.
-            </p>
-            <ul>
-              <li>
-                Designed the FORMAL system, combining retrieval-augmented thinking with agentic reasoning to translate natural language mathematics into Lean 4 code.
-              </li>
-              <li>
-                Achieved 92% syntactic correctness and 83% semantic accuracy on the Lean-Workbook dataset using local LLMs.
-              </li>
-              <li>
-                Built dynamic vector stores for theorem statements and tactic examples, enabling efficient proof search and verification.
-              </li>
-            </ul>
-          </article>
-        </section>
-      </main>
+    <Container size="large" className="container animate-enter">
+      <PageHeader
+        eyebrow="Experience"
+        title="Where I've worked"
+        subtitle="Research roles and what I worked on in each one."
+      />
+      <ol className="relative ml-1 border-l border-neutral-200 dark:border-neutral-800">
+        {roles.map((role) => (
+          <li key={role.org} className="relative pb-12 pl-8 last:pb-0">
+            <span
+              aria-hidden
+              className="absolute -left-[5px] top-2 h-[9px] w-[9px] rounded-full bg-emerald-500 ring-4 ring-zinc-50 dark:bg-emerald-400 dark:ring-zinc-950"
+            />
+            <article>
+              <header className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                <h2 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+                  {role.orgUrl ? (
+                    <a
+                      href={role.orgUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition-colors hover:text-emerald-800 dark:hover:text-emerald-300"
+                    >
+                      {role.org}
+                    </a>
+                  ) : (
+                    role.org
+                  )}
+                </h2>
+                <time className="shrink-0 font-mono text-xs uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                  {role.period}
+                </time>
+              </header>
+              <p className="mt-0.5 text-sm font-medium text-emerald-800 dark:text-emerald-300">
+                {role.title}
+              </p>
+              <ul className="mt-3 space-y-2">
+                {role.highlights.map((highlight) => (
+                  <li
+                    key={highlight}
+                    className="flex gap-3 text-[0.95rem] leading-relaxed text-neutral-600 dark:text-neutral-400"
+                  >
+                    <span
+                      aria-hidden
+                      className="mt-[0.6rem] h-1 w-1 shrink-0 rounded-full bg-neutral-400 dark:bg-neutral-600"
+                    />
+                    <span>{highlight}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {role.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-neutral-200 bg-white/80 px-2.5 py-0.5 text-xs font-medium tracking-tight text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900/40 dark:text-neutral-300"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </article>
+          </li>
+        ))}
+      </ol>
     </Container>
   );
 }
