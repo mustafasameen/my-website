@@ -41,7 +41,7 @@ export const Header = () => {
               <span className="text-medium inline-block font-medium">
                 Mustafa Sameen
               </span>
-              <span className="opacity-60">PhD student, Civil & Coastal Engineering</span>
+              <span className="opacity-60">PhD student</span>
               <span className="opacity-60">University of Florida</span>
             </div>
           </div>

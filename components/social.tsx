@@ -20,7 +20,7 @@ function SocialLink({ href, children }: { href: string; children: ReactNode }) {
 
 export default function Social() {
   return (
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap justify-center gap-3">
       <SocialLink href="https://github.com/mustafasameen">
         <IconGithub />
         GitHub
